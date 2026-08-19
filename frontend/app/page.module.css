@@ -1,0 +1,105 @@
+.main {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 60px 20px;
+  }
+  
+  .title {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #2196F3;
+  }
+  
+  .subtitle {
+    color: #4C494A;
+    font-size: 0.9rem;
+    margin-top: 4px;
+    opacity: 0.7;
+  }
+  
+  .form {
+    display: flex;
+    gap: 8px;
+    margin-top: 32px;
+  }
+  
+  .input {
+    flex: 1;
+    padding: 10px 14px;
+    border: 2px solid #BDDDF5;
+    border-radius: 6px;
+    font-size: 0.95rem;
+    background: #FFFFFF;
+    color: #4C494A;
+    outline: none;
+    transition: border-color 0.2s;
+  }
+  
+  .input:focus {
+    border-color: #2196F3;
+  }
+  
+  .button {
+    padding: 10px 20px;
+    background: #2196F3;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 6px;
+    font-size: 0.95rem;
+    cursor: pointer;
+    transition: opacity 0.2s;
+  }
+  
+  .button:hover {
+    opacity: 0.85;
+  }
+  
+  .button:disabled {
+    opacity: 0.5;
+    cursor: default;
+  }
+  
+  .status {
+    margin-top: 24px;
+    font-size: 0.9rem;
+    opacity: 0.6;
+  }
+  
+  .list {
+    list-style: none;
+    margin-top: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 20px;
+    background: #FFFFFF;
+    border-radius: 8px;
+    border: 1px solid #BDDDF5;
+  }
+  
+  .bookTitle {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #4C494A;
+  }
+  
+  .author {
+    font-size: 0.85rem;
+    color: #4C494A;
+    opacity: 0.6;
+    margin-top: 2px;
+  }
+  
+  .rating {
+    font-size: 0.9rem;
+    color: #2196F3;
+    font-weight: 500;
+    white-space: nowrap;
+  }
+  

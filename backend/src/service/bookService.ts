@@ -1,8 +1,16 @@
 export const getAllBooks = async (query: string) => {
     try {
-        const response = await fetch(`https://openlibrary.org/search.json?q=${query}&fields=title,author_name&limit=10`);
+        const response = await fetch(
+            `https://openlibrary.org/search.json?q=${encodeURIComponent(query)}&fields=title,author_name&limit=10`
+        );
+        if (!response.ok) {
+            throw new Error(`Open Library returned ${response.status}`);
+        }
         const data = await response.json();
         const myBooks = data.docs;
+        if (!Array.isArray(myBooks)) {
+            return [];
+        }
         const booksWithRating = await Promise.all(
             myBooks.map( async (book: any) => {
 

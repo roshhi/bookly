@@ -12,6 +12,7 @@ export const booksController = async (req: Request, res: Response) => {
             return res.status(200).json(books);
         }
     } catch (error) {
+        console.log('error', error);
         return res.status(500).json({ message: 'Error fetching books' });
     }
 }
